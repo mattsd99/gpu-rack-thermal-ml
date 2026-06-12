@@ -87,7 +87,7 @@ See `requirements.txt` for pinned versions.
 ### Train
 
 ```bash
-python surrogate_model.py --mode train
+python surrogate_model_main.py --mode train
 ```
 
 Trains on `dataset.npz` (500 cases), validates on `test_dataset.npz` (50
@@ -97,7 +97,7 @@ curves to `results/loss_curves.png`.
 ### Evaluate a saved checkpoint
 
 ```bash
-python surrogate_model.py --mode eval
+python surrogate_model_main.py --mode eval
 ```
 
 Loads `checkpoints/best_model.pth` and reports MAE, RMSE, and max-error
@@ -107,13 +107,13 @@ comparison plots to `results/`.
 ### Quick smoke test
 
 ```bash
-python surrogate_model.py --mode train --epochs 10
+python surrogate_model_main.py --mode train --epochs 10
 ```
 
 ### Custom data paths
 
 ```bash
-python surrogate_model.py --mode train \
+python surrogate_model_main.py --mode train \
     --data /path/to/dataset.npz \
     --val_data /path/to/test_dataset.npz \
     --epochs 300
@@ -151,7 +151,7 @@ ground truth | Surrogate | Absolute error).
 
 ```
 superpod-surrogate/
-├── surrogate_model.py     ← model definition, training, evaluation
+├── surrogate_model_main.py     ← model definition, training, evaluation
 ├── test_dataset.npz       ← 50 held-out cases (included directly)
 ├── requirements.txt
 ├── .gitignore
