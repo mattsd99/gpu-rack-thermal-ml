@@ -30,12 +30,13 @@ reconstruction challenge actually lives.
 
 ## Dataset
 
+Both datasets are hosted on Google Drive. Download them and place both files
+in the repo root before running.
+
 | File | Cases | Role | Link |
 |------|-------|------|------|
 | `dataset.npz` | 500 | Training set | [Google Drive](https://drive.google.com/drive/folders/1MlfygCfaVKGbIPvy6WIN0EQkVqr3s3za?usp=drive_link) |
-| `test_dataset.npz` | 50 | Validation / evaluation | included in repo |
-
-Download `dataset.npz` from the link above and place it in the repo root before training.
+| `test_dataset.npz` | 50 | Validation / evaluation | [Google Drive](https://drive.google.com/drive/folders/1MlfygCfaVKGbIPvy6WIN0EQkVqr3s3za?usp=drive_link) |
 
 Both files share the same array layout:
 
@@ -157,13 +158,12 @@ Each comparison plot shows three rows (T, Ux, Uy) × three columns
 gpu-rack-thermal-ml/
 ├── surrogate_model.py      ← model definition, training, evaluation
 ├── visualize_dataset.py    ← plot CFD ground truth fields (no model needed)
-├── test_dataset.npz        ← 50 held-out cases
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
 
-`dataset.npz` (500 training cases) is hosted on [Google Drive](https://drive.google.com/drive/folders/1MlfygCfaVKGbIPvy6WIN0EQkVqr3s3za?usp=drive_link).
+Both datasets are hosted on [Google Drive](https://drive.google.com/drive/folders/1MlfygCfaVKGbIPvy6WIN0EQkVqr3s3za?usp=drive_link).
 
 ---
 
