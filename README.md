@@ -68,8 +68,16 @@ parameter space and solved with `buoyantSimpleFoam` (k-ω SST, OpenFOAM v2406).
 ```bash
 git clone https://github.com/mattsd99/gpu-rack-thermal-ml.git
 cd gpu-rack-thermal-ml
-pip install -r requirements.txt
+
+conda env create -f environment.yml
+conda activate superpod-surrogate
 ```
+
+Then download `dataset.npz` and `test_dataset.npz` from [Google Drive](https://drive.google.com/drive/folders/1MlfygCfaVKGbIPvy6WIN0EQkVqr3s3za?usp=drive_link) and place both files in the repo root.
+
+> **Note:** The environment is configured for CUDA 12.4 (GPU). If you don't
+> have a CUDA-capable GPU, replace the torch line in `environment.yml` with
+> the CPU version from [pytorch.org](https://pytorch.org/get-started/locally/).
 
 ### Requirements
 
