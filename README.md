@@ -1,4 +1,4 @@
-# DGX H100 SuperPOD Thermal Surrogate
+# DGX H100 SuperPOD Thermal Reduced-Order Surrogate Model
 
 A data-driven surrogate model that replaces a full CFD solve of a DGX H100
 SuperPOD data center with a fast neural network forward pass (~ms vs ~hours).
