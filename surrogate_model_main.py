@@ -135,7 +135,7 @@ SEED_W = 7
 
 class MLPEncoder(nn.Module):
     # takes the 10 input params and maps them to a small spatial seed
-    # kept simple since theres not much to learn from 10 numbers
+    
     def __init__(self):
         super().__init__()
         self.net = nn.Sequential(
