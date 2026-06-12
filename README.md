@@ -7,6 +7,8 @@ Given 10 operating parameters (inlet velocity, supply temperature, and 8
 chassis load fractions), the model predicts the midplane temperature and
 velocity fields over the entire 2-rack slice.
 
+![](cover.png)
+
 ---
 
 ## Architecture
