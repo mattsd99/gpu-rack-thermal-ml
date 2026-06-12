@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# PyTorch checkpoints
+checkpoints/
+*.pth
+*.pt
+
+# Training outputs
+results/
+*.npy
+
+# Large dataset (tracked with Git LFS instead)
+dataset.npz
+
+# Normalisation stats (regenerated from training data)
+norm_stats.npz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
